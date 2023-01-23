@@ -1,0 +1,153 @@
+.assests{
+    p{
+        color: $textcolor;
+    }
+    h6,h3{
+        color: $secondtextcolor;
+    }
+    .assest-content{
+        
+        .car-detalies{
+            background: $maincolor;
+            background: linear-gradient(180deg, $maincolor 50%, $bodycolor 70%);
+                
+        }
+       
+        .detaleis{
+            overflow: hidden;
+        .Noties{
+            background-color: $maincolor;
+            h6{
+                font-size: 13px;
+            }
+            p{
+                font-size : 11px;
+            }
+            i{
+                color: $secondtextcolor;
+                font-size: 15px;
+                width: 33px;
+                height: 33px;
+                border-radius: 50px;
+                text-align: center;
+                background-color: $bodycolor;
+            }
+            .Completed{
+                background-color: rgb(55, 134, 55);
+                color: $secondtextcolor;
+            }
+            .not-Completed{
+                background-color:$textcolor;
+                color: $secondtextcolor;
+            }
+        }
+        .Available-Sensors{
+            form{
+                label{
+                color: $secondtextcolor;
+            }
+                input:checked {
+                    background-color: #FF6370;
+                    border: none;
+                   
+                }
+                
+            }
+        }
+        .Reminder{
+            background-color:  $maincolor  ;
+            
+            button{
+                background-color: $primarycolor;
+                border: none;
+            }
+            table{
+                
+                overflow: scroll;
+                background-color: $maincolor !important;
+                border: none;
+                
+                thead{
+                    color: $textcolor ;
+                        border-bottom: 2px solid #c1c1c112;
+                }
+                tbody{
+                    tr{
+                        color: $secondtextcolor ;
+                    background-color: transparent;
+                    border-bottom: 2px solid #c1c1c112;
+                    &:last-child{
+                        border: none;
+                    }}
+                    td,th{
+                        border: none;
+                    }
+               }
+               
+            }
+            
+        }
+    }
+}
+.add-reminder{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+   .close-form{
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    font-size: 2em;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    color: $secondtextcolor;
+    &:hover{
+        color: $primarycolor;
+    }
+   }
+    form{
+        position: absolute;
+        background-color: $maincolor;
+        top: 20%;
+         left: 0;
+        right: 0;
+        margin-left: 15%;
+        margin-right: 15%;
+        .form-control:focus {
+            border-color: $primarycolor;
+            box-shadow: 0 0 0 0.2rem #a062f759;
+        } 
+        input{
+            background-color: transparent;
+            color: $textcolor;
+            border: none;
+           
+        }
+        .form-check{
+            input{
+            background-color: $primarycolor;
+            color: black !important;}
+        }
+        button{
+            background-color: $primarycolor;
+            border: none;
+        }
+    }
+    background-color: rgba(39, 38, 38, 0.699);
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    height: 100%;
+}
+}
+
+.checked  {
+    color:#FF6370;
+}
+.active-form{
+    visibility: visible !important;
+    opacity: 1 !important;
+}

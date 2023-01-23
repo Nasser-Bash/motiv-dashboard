@@ -1,0 +1,39 @@
+.header{
+    background-color: $maincolor;
+    .open-sidebar{
+        background-color:$maincolor;
+        border: none;
+        &:hover {
+            background-color:$maincolor;
+            border: none;
+        }
+    }
+    input{
+        background-color: $bodycolor;
+        height: 25px;
+        border: none;
+        color: $secondtextcolor;
+        &:focus{
+            background-color: $bodycolor;
+            border: none;
+            color: $secondtextcolor;
+        }
+    }
+    .notification{
+        position: relative;
+        font-size: 1.3em;
+        color: $secondtextcolor !important;
+        cursor: pointer;
+        &::after{
+            content: '';
+            width: 7px;
+            height: 7px;
+            position: absolute;
+            background-color: red;
+            
+            border-radius: 50px;
+            top: 7px;
+            left: 7px;
+        }
+    }
+}

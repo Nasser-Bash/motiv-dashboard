@@ -1,0 +1,152 @@
+.card{
+    .CircularProgressbar {
+        width: 112px;
+        height: 112px;
+        border: none;
+        border-radius: 14px;
+       
+       
+    }
+   
+}
+.dark{
+    background-color: $primarycolor !important;
+    
+    .card-header{
+            border-bottom: none;
+            background-color: $primarycolor !important;
+            i{
+            color: $maincolor;
+            background-color: #b37efc !important;
+            svg{
+            width: 19.93px;
+            height: 19.93px;}
+        }
+    }
+    .card-title{
+        font-size: 24px;
+        font-weight: 700;
+        color: $maincolor;
+    }
+    .CircularProgressbar-text{
+        fill: $maincolor !important;
+    }
+    
+    .CircularProgressbar-path{
+        stroke:$maincolor !important;
+    }
+    .CircularProgressbar-trail{
+        stroke:#b37efc !important;
+    }
+}
+.white{
+    background-color: $maincolor !important;
+    border: none;
+    border-radius: 14px;
+   
+    .card-header{
+        border-bottom: none;
+        background-color: $maincolor !important;}
+    .card-title{
+        font-size: 24px;
+        font-weight: 700;
+        color: $secondtextcolor;
+    }
+    .CircularProgressbar-text{
+        fill: $secondtextcolor !important;
+    }
+    
+    .CircularProgressbar-trail{
+        stroke:$bodycolor !important;
+    }
+    
+    
+    
+}
+.Range{
+    .CircularProgressbar-path{
+        stroke:#FF7E86 !important;
+    }
+    .card-header{
+       
+        i{
+            color: #FF7E86 !important;
+           
+            svg{
+            width: 19.93px;
+            height: 19.93px;}
+        }
+}
+}
+.Break     {
+    .CircularProgressbar-path{
+        stroke:$primarycolor !important;
+    }
+    .card-header{
+       
+        i{
+            color: $primarycolor !important;
+            
+            svg{
+            width: 19.93px;
+            height: 19.93px;}
+        }
+}
+}
+.Tire {
+    .CircularProgressbar-path{
+        stroke:#F6CC0D !important;
+    }
+    .card-header{
+      
+        i{
+            color: #F6CC0D !important;
+            svg{
+            width: 19.93px;
+            height: 19.93px;}
+        }
+}
+}
+.cars-card{
+    .card{
+        border-radius: 14px;
+       
+        
+        img{
+            width: 100%;
+            height: 106px;
+            object-fit: contain;
+        }
+        .subtitle{
+            font-weight: 700;
+            font-size: 16px;
+            img{
+                height: 20.100000381469727px;
+width: 20.200000762939453px;
+
+
+            }
+        }
+        .icons{
+            img{
+                height: 24.341064453125px;
+                    width: 17.358318328857422px;
+            }
+        }
+    }
+}
+
+    .chart{
+    background-color: $maincolor;
+    .recharts-wrapper{
+       
+        width: 100% !important;
+    }
+   .recharts-surface{
+    width: 100% !important;
+   }
+    .recharts-tooltip-wrapper{
+        color: $maincolor;
+       
+    }
+}

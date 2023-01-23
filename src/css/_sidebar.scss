@@ -1,0 +1,52 @@
+.sidebar{
+    position: fixed;
+    width: 250px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    background-color: $maincolor;
+    padding: 30px 24px;
+    z-index: 10;
+    .close-sidebar{
+        position: absolute;
+        right: 10px;
+        font-size: 1.2em;
+        top: 0;
+        padding: 10px;
+        color: $secondtextcolor;
+        transition: all 0.2s ease-in;
+        cursor: pointer;
+        &:hover{
+            color: $primarycolor;
+        }
+    }
+    ul{
+        padding: 17px 8px;
+        li{
+            padding: 8px;
+            transition: all 0.3s ease-in;
+            border-radius: 5px;
+            &:hover{
+                background-color: $bodycolor;
+            }   
+        }
+        a{
+            text-decoration: none;
+            color: $secondtextcolor;
+            transition: all 0.3s ease-in;
+            &:hover{
+                color: $textcolor;
+            }
+        }
+        
+    }
+}
+@media only screen and (max-width: 992px) {
+    .sidebar{
+        margin-left: -250px;
+    }
+  }
+  .active{
+    margin-left: 0;
+  }

@@ -1,0 +1,26 @@
+.filtring{
+    form{
+            select{
+        background-color: $maincolor;
+        border: none;
+        width: 120px;
+        color: white;
+    }}
+    .display-style{
+        i{
+            font-size: small;
+            background-color: $maincolor;
+            transition: all 0.3s ease-in;
+            color: $textcolor;
+            cursor: pointer;
+            &:hover{
+                background-color: $primarycolor;
+                color: $maincolor;
+            }
+        }
+    }
+    .active{
+        background-color: $primarycolor !important;
+                    color: $maincolor !important;
+    }
+}

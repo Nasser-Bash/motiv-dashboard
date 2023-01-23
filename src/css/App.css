@@ -1,0 +1,631 @@
+.header {
+  background-color: #242731;
+}
+
+.header .open-sidebar {
+  background-color: #242731;
+  border: none;
+}
+
+.header .open-sidebar:hover {
+  background-color: #242731;
+  border: none;
+}
+
+.header input {
+  background-color: #1F2128;
+  height: 25px;
+  border: none;
+  color: white;
+}
+
+.header input:focus {
+  background-color: #1F2128;
+  border: none;
+  color: white;
+}
+
+.header .notification {
+  position: relative;
+  font-size: 1.3em;
+  color: white !important;
+  cursor: pointer;
+}
+
+.header .notification::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  background-color: red;
+  border-radius: 50px;
+  top: 7px;
+  left: 7px;
+}
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #242731;
+  padding: 30px 24px;
+  z-index: 10;
+}
+
+.sidebar .close-sidebar {
+  position: absolute;
+  right: 10px;
+  font-size: 1.2em;
+  top: 0;
+  padding: 10px;
+  color: white;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.sidebar .close-sidebar:hover {
+  color: #A162F7;
+}
+
+.sidebar ul {
+  padding: 17px 8px;
+}
+
+.sidebar ul li {
+  padding: 8px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border-radius: 5px;
+}
+
+.sidebar ul li:hover {
+  background-color: #1F2128;
+}
+
+.sidebar ul a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.sidebar ul a:hover {
+  color: #5F6165;
+}
+
+@media only screen and (max-width: 992px) {
+  .sidebar {
+    margin-left: -250px;
+  }
+}
+
+.active {
+  margin-left: 0;
+}
+
+.card {
+  background-color: #242731 !important;
+}
+
+.card img {
+  width: 100%;
+  height: 105px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card .card-title, .card .price {
+  color: white;
+}
+
+.card i, .card .card-subtitle {
+  color: #A162F7;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.card i:hover, .card .card-subtitle:hover {
+  color: #A162F7;
+}
+
+.card .add-to-wishlist {
+  color: #A162F7;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.filtring form select {
+  background-color: #242731;
+  border: none;
+  width: 120px;
+  color: white;
+}
+
+.filtring .display-style i {
+  font-size: small;
+  background-color: #242731;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  color: #5F6165;
+  cursor: pointer;
+}
+
+.filtring .display-style i:hover {
+  background-color: #A162F7;
+  color: #242731;
+}
+
+.filtring .active {
+  background-color: #A162F7 !important;
+  color: #242731 !important;
+}
+
+.card .CircularProgressbar {
+  width: 112px;
+  height: 112px;
+  border: none;
+  border-radius: 14px;
+}
+
+.dark {
+  background-color: #A162F7 !important;
+}
+
+.dark .card-header {
+  border-bottom: none;
+  background-color: #A162F7 !important;
+}
+
+.dark .card-header i {
+  color: #242731;
+  background-color: #b37efc !important;
+}
+
+.dark .card-header i svg {
+  width: 19.93px;
+  height: 19.93px;
+}
+
+.dark .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #242731;
+}
+
+.dark .CircularProgressbar-text {
+  fill: #242731 !important;
+}
+
+.dark .CircularProgressbar-path {
+  stroke: #242731 !important;
+}
+
+.dark .CircularProgressbar-trail {
+  stroke: #b37efc !important;
+}
+
+.white {
+  background-color: #242731 !important;
+  border: none;
+  border-radius: 14px;
+}
+
+.white .card-header {
+  border-bottom: none;
+  background-color: #242731 !important;
+}
+
+.white .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.white .CircularProgressbar-text {
+  fill: white !important;
+}
+
+.white .CircularProgressbar-trail {
+  stroke: #1F2128 !important;
+}
+
+.Range .CircularProgressbar-path {
+  stroke: #FF7E86 !important;
+}
+
+.Range .card-header i {
+  color: #FF7E86 !important;
+}
+
+.Range .card-header i svg {
+  width: 19.93px;
+  height: 19.93px;
+}
+
+.Break .CircularProgressbar-path {
+  stroke: #A162F7 !important;
+}
+
+.Break .card-header i {
+  color: #A162F7 !important;
+}
+
+.Break .card-header i svg {
+  width: 19.93px;
+  height: 19.93px;
+}
+
+.Tire .CircularProgressbar-path {
+  stroke: #F6CC0D !important;
+}
+
+.Tire .card-header i {
+  color: #F6CC0D !important;
+}
+
+.Tire .card-header i svg {
+  width: 19.93px;
+  height: 19.93px;
+}
+
+.cars-card .card {
+  border-radius: 14px;
+}
+
+.cars-card .card img {
+  width: 100%;
+  height: 106px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cars-card .card .subtitle {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.cars-card .card .subtitle img {
+  height: 20.100000381469727px;
+  width: 20.200000762939453px;
+}
+
+.cars-card .card .icons img {
+  height: 24.341064453125px;
+  width: 17.358318328857422px;
+}
+
+.chart {
+  background-color: #242731;
+}
+
+.chart .recharts-wrapper {
+  width: 100% !important;
+}
+
+.chart .recharts-surface {
+  width: 100% !important;
+}
+
+.chart .recharts-tooltip-wrapper {
+  color: #242731;
+}
+
+.assests p {
+  color: #5F6165;
+}
+
+.assests h6, .assests h3 {
+  color: white;
+}
+
+.assests .assest-content .car-detalies {
+  background: #242731;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #242731), color-stop(70%, #1F2128));
+  background: linear-gradient(180deg, #242731 50%, #1F2128 70%);
+}
+
+.assests .assest-content .detaleis {
+  overflow: hidden;
+}
+
+.assests .assest-content .detaleis .Noties {
+  background-color: #242731;
+}
+
+.assests .assest-content .detaleis .Noties h6 {
+  font-size: 13px;
+}
+
+.assests .assest-content .detaleis .Noties p {
+  font-size: 11px;
+}
+
+.assests .assest-content .detaleis .Noties i {
+  color: white;
+  font-size: 15px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: #1F2128;
+}
+
+.assests .assest-content .detaleis .Noties .Completed {
+  background-color: #378637;
+  color: white;
+}
+
+.assests .assest-content .detaleis .Noties .not-Completed {
+  background-color: #5F6165;
+  color: white;
+}
+
+.assests .assest-content .detaleis .Available-Sensors form label {
+  color: white;
+}
+
+.assests .assest-content .detaleis .Available-Sensors form input:checked {
+  background-color: #FF6370;
+  border: none;
+}
+
+.assests .assest-content .detaleis .Reminder {
+  background-color: #242731;
+}
+
+.assests .assest-content .detaleis .Reminder button {
+  background-color: #A162F7;
+  border: none;
+}
+
+.assests .assest-content .detaleis .Reminder table {
+  overflow: scroll;
+  background-color: #242731 !important;
+  border: none;
+}
+
+.assests .assest-content .detaleis .Reminder table thead {
+  color: #5F6165;
+  border-bottom: 2px solid #c1c1c112;
+}
+
+.assests .assest-content .detaleis .Reminder table tbody tr {
+  color: white;
+  background-color: transparent;
+  border-bottom: 2px solid #c1c1c112;
+}
+
+.assests .assest-content .detaleis .Reminder table tbody tr:last-child {
+  border: none;
+}
+
+.assests .assest-content .detaleis .Reminder table tbody td, .assests .assest-content .detaleis .Reminder table tbody th {
+  border: none;
+}
+
+.assests .add-reminder {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background-color: rgba(39, 38, 38, 0.699);
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.assests .add-reminder .close-form {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  font-size: 2em;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  color: white;
+}
+
+.assests .add-reminder .close-form:hover {
+  color: #A162F7;
+}
+
+.assests .add-reminder form {
+  position: absolute;
+  background-color: #242731;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.assests .add-reminder form .form-control:focus {
+  border-color: #A162F7;
+  -webkit-box-shadow: 0 0 0 0.2rem #a062f759;
+          box-shadow: 0 0 0 0.2rem #a062f759;
+}
+
+.assests .add-reminder form input {
+  background-color: transparent;
+  color: #5F6165;
+  border: none;
+}
+
+.assests .add-reminder form .form-check input {
+  background-color: #A162F7;
+  color: black !important;
+}
+
+.assests .add-reminder form button {
+  background-color: #A162F7;
+  border: none;
+}
+
+.checked {
+  color: #FF6370;
+}
+
+.active-form {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.sign-in, .sign-up {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.sign-in form, .sign-up form {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  margin-left: 26%;
+  margin-right: 26%;
+  color: white;
+}
+
+.sign-in form .title p, .sign-up form .title p {
+  font-size: 13px;
+}
+
+.sign-in form .title p a, .sign-up form .title p a {
+  text-decoration: none;
+  color: #A162F7;
+  font-weight: bold;
+}
+
+.sign-in form .gmail, .sign-up form .gmail {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  font-size: small;
+}
+
+.sign-in form .gmail:hover, .sign-up form .gmail:hover {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.sign-in form .facebook, .sign-up form .facebook {
+  background: #4776D0;
+  font-size: small;
+}
+
+.sign-in form .facebook:hover, .sign-up form .facebook:hover {
+  background: #4776D0;
+}
+
+.sign-in form .or, .sign-up form .or {
+  position: relative;
+}
+
+.sign-in form .or::before, .sign-up form .or::before {
+  content: '';
+  width: 47%;
+  position: absolute;
+  right: 0;
+  top: 13px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 1px;
+}
+
+.sign-in form .or::after, .sign-up form .or::after {
+  content: '';
+  width: 47%;
+  position: absolute;
+  left: 0;
+  top: 13px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 1px;
+}
+
+.sign-in form input, .sign-up form input {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.sign-in form input:focus, .sign-up form input:focus {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+}
+
+.sign-in form input:checked, .sign-up form input:checked {
+  background-color: #A162F7;
+  border: none;
+}
+
+.sign-in form .Forgot, .sign-up form .Forgot {
+  text-decoration: none;
+  color: #A162F7;
+}
+
+.sign-in form button, .sign-up form button {
+  background-color: #A162F7;
+  border: none;
+}
+
+.sign-in form button:hover, .sign-up form button:hover {
+  background-color: #A162F7;
+  border: none;
+}
+
+@media only screen and (max-width: 711px) {
+  .sign-in form, .sign-up form {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #1F2128 !important;
+}
+
+.main-container {
+  position: relative;
+  right: 0;
+}
+
+.content-container {
+  width: calc(100% - 250px);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.title {
+  color: white !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .content-container {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=App.css.map */
